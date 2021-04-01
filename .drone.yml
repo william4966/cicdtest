@@ -4,8 +4,8 @@ name: default
 
 steps:
 - name: build
-  image: node
+  image: aipline
   commands:
   - echo hello
   - echo world
-  - docker build -f Dockerfile wanglei4966/cicdtest
+  - docker build -f Dockerfile .
