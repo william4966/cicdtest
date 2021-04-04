@@ -23,6 +23,6 @@ steps:
     port: 22
     script:
       - sudo docker pull wanglei4966/repository:latest
-      - sudo docker sun -d -p 8081:8081 --restart=always --name=runner wanglei4966/repository:latest
+      - sudo docker run -p 8081:8081 --restart=always --name=runner wanglei4966/repository:latest
 
   
