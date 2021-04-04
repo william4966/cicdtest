@@ -15,7 +15,7 @@ steps:
     password: dajiaDAJIA1
     repo: wanglei4966/repository
     tags: latest
-  - name: ssh commands
+  - name: ssh
     image: appleboy/drone-ssh
     settings:
       host: foo.com
