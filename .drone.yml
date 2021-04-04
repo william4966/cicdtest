@@ -15,14 +15,3 @@ steps:
     password: dajiaDAJIA1
     repo: wanglei4966/repository
     tags: latest
-- name: deploy
-    image: appleboy/drone-ssh
-    settings:
-      host: localhost
-      username: wang.lei
-      key:
-        from_secret: ssh_key
-      port: 22
-      script:
-        - echo "hello"
-        - echo "world"
