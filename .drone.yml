@@ -25,5 +25,5 @@ steps:
       - sudo docker pull wanglei4966/repository:latest
       - sudo docker stop test || true && sudo docker rm test || true
       - sudo docker run -p 8081:8081 --restart=always --name=test wanglei4966/repository:latest
-
+      - exit 0
   
