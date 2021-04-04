@@ -9,7 +9,7 @@ steps:
   - echo hello
   - echo world
 - name: docker
-  image : plugins/docker
+  image: plugins/docker
   settings:
     username: wanglei4966
     password: dajiaDAJIA1
@@ -22,7 +22,6 @@ steps:
       username: wang.lei
       key:
         from_secret: ssh_key
-
       port: 22
       script:
         - echo "hello"
