@@ -20,9 +20,8 @@ steps:
   settings:
     host: 46.137.226.188
     username: ubuntu
+    password: ubuntu
     port: 22
-    key:
-      from_secret: 
     script:
       - echo hello
       - echo world
