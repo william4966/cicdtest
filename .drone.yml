@@ -7,14 +7,14 @@ steps:
   image: node
   commands:
   - npm install
-- name: docker
+- name: push
   image: plugins/docker
   settings:
     username: wanglei4966
     password: dajiaDAJIA1
     repo: wanglei4966/repository
     tags: latest
-- name: ssh
+- name: deploy
   image: appleboy/drone-ssh
   settings:
     host: 46.137.226.188
