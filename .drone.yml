@@ -15,3 +15,16 @@ steps:
     password: dajiaDAJIA1
     repo: wanglei4966/repository
     tags: latest
+  - name: ssh commands
+    image: appleboy/drone-ssh
+    settings:
+      host: foo.com
+      username: root
+      port: 22
+      key:
+        from_secret: ssh_key
+      script:
+        - echo hello
+        - echo world
+
+  
