@@ -17,7 +17,7 @@ steps:
 - name: deploy
   image: appleboy/drone-ssh
   settings:
-    host: http://ec2-46-137-226-188.ap-southeast-1.compute.amazonaws.com
+    host: ec2-46-137-226-188.ap-southeast-1.compute.amazonaws.com
     username: ubuntu
     password: ubuntu
     port: 22
