@@ -11,15 +11,17 @@ steps:
   image: plugins/docker
   settings:
     username: wanglei4966
-    password: dajiaDAJIA1
+    password:      
+      from_secret: docker_password
     repo: wanglei4966/repository
     tags: latest
 - name: deploy
   image: appleboy/drone-ssh
   settings:
-    host: ec2-46-137-226-188.ap-southeast-1.compute.amazonaws.com
+    host: 13.212.231.114
     username: ubuntu
-    password: ubuntu
+    password:      
+      from_secret: ssh_password
     port: 22
     script:
       - sudo docker pull wanglei4966/repository:latest
